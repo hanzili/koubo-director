@@ -1,0 +1,17 @@
+node_modules/
+.render-cache/
+work/
+output/
+dist/
+__pycache__/
+*.pyc
+*.mp4
+*.mov
+*.webm
+*.wav
+*.log
+.DS_Store
+channel.yaml
+engine/public/fonts/*.ttf
+engine/public/fonts/*.woff2
+engine/public/fonts/*.otf

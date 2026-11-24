@@ -1,0 +1,44 @@
+# channel.example.yaml — 复制为 channel.yaml 后按自己频道修改
+channel:
+  id: my-explainer-channel
+  name: "你的频道名称"
+  niche: "商业 / 科技 / 财经 / 出海 / 人物故事"
+  audience: "你的核心目标观众一句话描述"
+  language: zh-CN
+
+visual:
+  # 可选: obsidian (深海财经) | editorial (暖白杂志) | cyber (极客暗黑) | vintage (复古手账)
+  skin: editorial
+  canvas:
+    width: 1080
+    height: 1920
+    fps: 24
+  # 竖屏安全带：避开右上角 PiP 小窗与底部字幕区
+  safe_zone:
+    top_y: 460
+    bottom_y: 1380
+    pip_diameter: 250
+    sub_y: 1440
+  brand:
+    logo: ""           # 留空保持画面干净；或填写短频道徽标
+    label: ""          # 左上角角标，正式发布建议留空
+
+director:
+  # 节奏档位: deep-explainer (深度讲解) | fast-take (快节奏干货) | documentary (故事纪录片)
+  rhythm_preset: deep-explainer
+  min_settle_sec: 0.6          # 切屏前最后动画静止吸收时间（秒）
+  max_bg_flips_per_min: 7.5    # 整屏换底上限
+  min_long_canvas_pct: 45      # >=8s 同屏累加画布占比下限 (%)
+  plain_presenter_pct: [18, 28] # 纯真人呼吸感占比区间 (%)
+
+audio:
+  target_lufs: -16.0
+  music_under_db: 19.5         # 说话时配乐低于人声基准 dB
+  min_dynamics_db: 15.0        # 配乐疏密起伏最小动态范围
+  sfx_per_min_max: 6
+  music_mood: "modern-lofi-plucked"
+
+paths:
+  engine_src: engine        # Remotion 引擎模板路径
+  assets_root: assets          # 频道通用素材目录
+  output_dir: output           # 成片交付目录

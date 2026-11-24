@@ -1,0 +1,29 @@
+{
+  "fps": 24,
+  "total": 4.0,
+  "skin": "obsidian",
+  "theme": "finance",
+  "brand": {"logo": "", "label": ""},
+  "vsegs": [],
+  "subs": [],
+  "blocks": [{"t0": 0, "t1": 4, "scene": "hello", "aroll": "hide"}],
+  "scenes": {
+    "hello": {
+      "t0": 0,
+      "bg": {"type": "skin", "skin": "obsidian"},
+      "els": [
+        {
+          "k": "vs_duel", "t": 0, "x": 540, "y": 930, "w": 900, "h": 900, "mode": "stack",
+          "title": "Koubo Director Starter",
+          "a": {"badge": "BEFORE", "title": "Static PPT Slides", "value": "12 cuts/m", "sub": "Too fast, hard to read", "c": "crimson"},
+          "b": {"badge": "AFTER", "title": "Within-Screen Story", "value": "4 Skins", "sub": "26 progressive components", "c": "teal"},
+          "delta": "Switch skin in 1 line"
+        }
+      ],
+      "cam": [],
+      "fx": []
+    }
+  },
+  "trans": [],
+  "mattes": []
+}
